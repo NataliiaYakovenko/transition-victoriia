@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin:0 ;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn{
+    border: none;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: green;
+    transition: background-color 1s linear 0.5s;
+    transition: box-shadow 0.5s ease-in-out 0.5s;
+  
+}
+
+.btn:hover{
+    background-color: lightgreen;
+    box-shadow: 0 0 5px rgb(80, 69, 69);
+}
