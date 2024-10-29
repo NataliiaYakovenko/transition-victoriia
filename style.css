@@ -3,23 +3,41 @@
     margin:0 ;
     box-sizing: border-box;
 }
-body{
+
+header{
+    min-height: 100vh;
+    color: white;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-}
-.btn{
-    border: none;
-    color: white;
-    border-radius: 15px;
-    padding: 5px 10px;
-    background-color: green;
-    transition: background-color 1s linear 0.5s;
-    transition: box-shadow 0.5s ease-in-out 0.5s;
-  
+    align-items: center;
+    position: relative;
+    font-size: 50px;
+    
 }
 
-.btn:hover{
-    background-color: lightgreen;
-    box-shadow: 0 0 5px rgb(80, 69, 69);
+.bg{
+    background-color: rgb(117, 116, 133);
+    background-image: url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    filter: blur(1px);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;  
 }
+h1, .bg{
+transition: filter 1s easy-in;
+}
+
+header:hover h1{
+    filter: blur(2px);
+   
+}
+header:hover .bg{
+    filter: blur(0);
+   
+}
+
